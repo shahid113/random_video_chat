@@ -7,10 +7,10 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIO(server);
 
-const waitingUsers = [];
-
 // Serve static files from the public directory
-app.use(express.static(path.join(__dirname, '..', 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
+
+const waitingUsers = [];
 
 io.on('connection', (socket) => {
   console.log('A user connected: ' + socket.id);
