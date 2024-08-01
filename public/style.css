@@ -36,7 +36,7 @@ video {
   max-height: 100%;
   border-radius: 8px;
   background-color: #000;
-  border: 2px solid #4caf50;
+  border: 1px solid whitesmoke;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
 }
 
@@ -74,7 +74,7 @@ video {
 
   .video-container {
     flex-direction: column;
-    width: 100%;
+    width: 90%;
     height: auto;
   }
 
@@ -99,7 +99,7 @@ video {
   }
 
   .video-container {
-    width: 100%;
+    width: 90%;
   }
 
   video {
