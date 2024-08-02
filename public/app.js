@@ -20,6 +20,7 @@ navigator.mediaDevices.getUserMedia({ video: true, audio: true })
 
 peerConnection.ontrack = event => {
   remoteVideo.srcObject = event.streams[0];
+  loader.classList.add('hidden'); // Hide loader when remote video starts playing
 };
 
 peerConnection.onicecandidate = event => {
