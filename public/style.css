@@ -16,9 +16,8 @@
 }
 
 video {
-  width: 100%;
+  width: fit-content;
   height: auto;
-  margin-bottom: 10px;
 }
 
 #localVideo {
