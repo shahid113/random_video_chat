@@ -28,7 +28,7 @@ h1, h2, h3 {
 }
 
 video {
-  width: 100%;
+  width: fit-content;
   height: auto;
 }
 
@@ -79,10 +79,11 @@ footer {
   display: none;
 }
 
+
 .loader {
   position: absolute;
-  top: 48%;
-  left: 48%;
+  top: 45%;
+  left: 45%;
   transform: translate(-50%, -50%);
   border: 2px solid #f3f3f3;
   border-top: 2px solid #3498db;
@@ -95,4 +96,25 @@ footer {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .loader {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .loader {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+  }
 }
